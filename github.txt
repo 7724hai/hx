@@ -1,0 +1,49 @@
+###安装git 
+[git安装]（https://git-scm.com）
+[github注册](https://github.com/)
+
+
+###基本配置
+#配置ssh密匙
+cd~/.ssh /*查看密匙是否存在*/
+
+若无法找到如图所示文件则配置ssh key
+ssh-keygen -t -C 邮箱名
+直接两次enter
+ssh -T git@github.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###添加文件
+
+#第一种方法
+echo "# 分支名" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/7724hai/home.git
+git push -u origin master                                        /*git push 分支名*/
+
+# 第二种方法
+push an existing repository from the command line
+git remote add origin https://github.com/7724hai/-.git
+git push -u origin master
+
+# 第三种方法
+
+or import code from another repository
+You can initialize this repository with code from 其他项目
+
